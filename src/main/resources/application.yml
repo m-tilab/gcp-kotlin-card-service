@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql:///postgres
+    url: jdbc:postgresql://${DATABASE_HOST}/postgres
     username: postgres
     password: postgres
   cloud:
