@@ -10,9 +10,9 @@ spring:
     password: postgres
   cloud:
     gcp:
-      project-id: persian-javatalk
+      project-id: sample1-424312
       sql:
-        instance-connection-name: persian-javatalk:us-central1:test-postgres-cloud-sql
+        instance-connection-name: sample1-424312:us-central1:test-postgres-cloud-sql
         database-name: postgres
   jpa:
     hibernate:
