@@ -1,1 +1,19 @@
-spring.application.name=gcp-kotlin-card-service
+server:
+  servlet:
+    context-path: /card-service
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql:///postgres
+    username: postgres
+    password: postgres
+  cloud:
+    gcp:
+      project-id: persian-javatalk
+      sql:
+        instance-connection-name: persian-javatalk:us-central1:test-postgres-cloud-sql
+        database-name: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
